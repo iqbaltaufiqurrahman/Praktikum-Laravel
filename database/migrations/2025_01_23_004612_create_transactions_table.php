@@ -29,6 +29,10 @@ return new class extends Migration
             $table->integer('grandtotal');
             $table->integer('paytotal');
             $table->timestamps();
+
+            //mengubah tipe data costumes & shoes menjadi boolean
+            //mengubah tipe data starttime & datetime menjadi time
+            //menghapus tabel duration
         });
     }
 

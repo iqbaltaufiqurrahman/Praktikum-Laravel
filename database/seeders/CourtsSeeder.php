@@ -22,7 +22,7 @@ class CourtsSeeder extends Seeder
         
         for($i=1; $i <=5; $i++){
             DB::table('courts')->insert([
-                'court_type_id' => $faker->numberBetween(1, 5),
+                'court_type_id' => $faker->numberBetween(1, 5), //foreign key
                 'name' => 'Lapangan '. $i,
                 'price' => $faker-> numberBetween(100000,1500000),
             ]);

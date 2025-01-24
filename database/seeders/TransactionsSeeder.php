@@ -22,12 +22,12 @@ class TransactionsSeeder extends Seeder
         
         for($i=1; $i <=5; $i++){
             DB::table('transactions')->insert([
-                'user_id' => $faker->numberBetween(1, 5),
+                'user_id' => $faker->numberBetween(1, 5), //foreign key
                 'name' => $faker->name,
                 'address' => $faker->address,
                 'phone' => $faker->phoneNumber,
                 'date' => $faker->date,
-                'court_id' => $faker->numberBetween(1, 5),
+                'court_id' => $faker->numberBetween(1, 5), //foreign key
                 'starttime' => $faker->time(),
                 'endtime' => $faker->time(),
                 'costume' => $faker->boolean(),
