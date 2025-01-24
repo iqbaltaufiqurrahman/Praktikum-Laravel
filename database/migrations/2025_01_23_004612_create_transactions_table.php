@@ -21,11 +21,10 @@ return new class extends Migration
             $table->date('date');
             $table->unsignedBigInteger('court_id');
             $table->foreign('court_id')->references('id')->on('courts');
-            $table->timestamp('starttime');
-            $table->timestamp('endtime');
-            $table->integer('duration');
-            $table->integer('costume');
-            $table->integer('shoes');
+            $table->time('starttime');
+            $table->time('endtime');
+            $table->boolean('costume');
+            $table->boolean('shoes');
             $table->integer('total');
             $table->integer('grandtotal');
             $table->integer('paytotal');
