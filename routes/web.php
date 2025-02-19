@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CourtsController;
+use App\Http\Controllers\CourtTypeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
@@ -28,3 +31,20 @@ Route::get('/product', function () {
 Route::get('/form', function () {
     return view('form');
 });
+*/
+
+Route::get('/courts', [CourtsController::class, 'index']);
+
+Route::get('/view', function () {
+    return view('mcourts');
+});
+
+Route::get('/types', [CourtTypeController::class, 'index']);
+
+
+
+Route::post('/', [CourtTypeController::class, 'store']);
+
+Route::resource('court', CourtsController::class);
+
+?>
