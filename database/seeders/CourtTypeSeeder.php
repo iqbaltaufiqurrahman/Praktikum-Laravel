@@ -22,7 +22,7 @@ class CourtTypeSeeder extends Seeder
         
         for($i=1; $i <=5; $i++){
             DB::table('court_types')->insert([
-                'name' => 'Lapangan '. $i
+                'name' => 'Tipe '. $i
             ]);
         }
     }

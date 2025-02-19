@@ -10,17 +10,11 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
-        th {
-            text-align: justify;
-        }
-        
         td {
-            text-align: justify;
+            text-align: center;
         }
-        
-        .pr {
-            text-align: left;
+        .th {
+            text-align: center;
         }
     </style>
     <!--CSS Local-->

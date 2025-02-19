@@ -7,10 +7,14 @@ use App\Models\CourtType;
 
 class CourtTypeController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     */
     public function index ()
     {
         $types = CourtType::all();
-        return $types;
+        return view('mcourt_type', compact('types'));
+        //return $types;
         //return view('mcourt_type');
     }
 

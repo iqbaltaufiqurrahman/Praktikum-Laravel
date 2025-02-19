@@ -33,15 +33,11 @@ Route::get('/form', function () {
 });
 */
 
+//Routing ke halaman Courts
 Route::get('/courts', [CourtsController::class, 'index']);
 
-Route::get('/view', function () {
-    return view('mcourts');
-});
-
-Route::get('/types', [CourtTypeController::class, 'index']);
-
-
+//Routing ke halaman Court Type
+Route::get('/type', [CourtTypeController::class, 'index']);
 
 Route::post('/', [CourtTypeController::class, 'store']);
 

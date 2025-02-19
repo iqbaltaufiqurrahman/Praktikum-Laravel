@@ -13,7 +13,8 @@ class CourtsController extends Controller
     public function index()
     {
         $courts = Courts::all();
-        return $courts;
+        return view('mcourts', compact('courts'));
+        //return $courts;
         //return view('mcourts');
     }
 
