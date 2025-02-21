@@ -10,5 +10,7 @@ class Courts extends Model
     public function type()
     {
         return $this->belongsTo(CourtType::class, 'court_type_id');
+
+        return $this->hasMany(Transactions::class);
     }
 }

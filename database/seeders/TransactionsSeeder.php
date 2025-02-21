@@ -32,9 +32,9 @@ class TransactionsSeeder extends Seeder
                 'endtime' => $faker->time(),
                 'costume' => $faker->boolean(),
                 'shoes' => $faker->boolean(),
-                'total' => $faker->numberBetween(100000, 1500000),
-                'grandtotal' => $faker->numberBetween(100000, 1500000),
-                'paytotal' => $faker->numberBetween(100000, 1500000)
+                'total' => $faker->numberBetween(100000, 1000000),
+                'grandtotal' => $faker->numberBetween(100000, 1000000),
+                'paytotal' => $faker->numberBetween(100000, 1000000)
             ]);
         }
     }

@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\CourtsController;
 use App\Http\Controllers\CourtTypeController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\TransactionsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,15 +17,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
-/*
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return view('dashboard');
 });
 
+/*
 Route::get('/product', function () {
     return view('product');
 });
@@ -37,7 +41,13 @@ Route::get('/form', function () {
 Route::get('/courts', [CourtsController::class, 'index']);
 
 //Routing ke halaman Court Type
-Route::get('/type', [CourtTypeController::class, 'index']);
+Route::get('/types', [CourtTypeController::class, 'index']);
+
+//Routing ke halaman User
+Route::get('/users', [UserController::class, 'index']);
+
+//Routing ke halamam Transactions
+Route::get('/transactions', [TransactionsController::class, 'index']);
 
 Route::post('/', [CourtTypeController::class, 'store']);
 

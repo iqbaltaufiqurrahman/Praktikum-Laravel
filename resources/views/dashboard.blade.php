@@ -7,8 +7,9 @@
 
     <!--CSS-->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
         * {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'DM Sans';
         }
         td {
             text-align: center;
@@ -30,21 +31,24 @@
 
     <!--Sidebar-->
     <div class="row g-0">
-        <div class="col-md-2 d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="height: 100vh;">
+        <div class="col-md-2 d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="height: 200vh;">
             <a class="align-items-center text-white text-decoration-none" href="#">
-                <i class="bi bi-amd me-2 fs-4 ps-1 text-danger"></i><span class="fs-4 fw-bold">AMD.</span>
+                <i class="bi bi-amd me-2 fs-4 ps-2 text-danger"></i><span class="fs-3 fw-bold">Laravel.</span>
             </a>
             <hr>
             <!--Menu sidebar-->
             <ul class="nav nav-pills flex-column mb-auto fw-medium">
                 <li class="nav-item">
-                    <a href="dashboard.html" class="nav-link text-white" id="dashboard"><i class="bi bi-house me-2"></i>Dashboard</a>
+                    <a href="users" class="nav-link text-white" id="dashboard"><i class="bi bi-house me-2"></i>Users</a>
                 </li>
                 <li class="nav-item">
-                    <a href="products.html" class="nav-link text-white" id="products"><i class="bi bi-cpu me-2"></i>Products</a>
+                    <a href="courts" class="nav-link text-white" id="products"><i class="bi bi-grid-fill me-2"></i>Courts</a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link text-white" id="services"><i class="bi bi-grid-fill me-2"></i>Services</a>
+                    <a href="types" class="nav-link text-white" id="services"><i class="bi bi-grid-fill me-2"></i>Court-Type</a>
+                </li>
+                <li class="nav-item">
+                    <a href="transactions" class="nav-link text-white" id="services"><i class="bi bi-grid-fill me-2"></i>Transactions</a>
                 </li>
             </ul>
             <hr>
