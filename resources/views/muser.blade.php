@@ -18,6 +18,7 @@
                                         <th class="th">No.</th>
                                         <th class="th">Name</th>
                                         <th class="th">Email</th>
+                                        <th class="th">Password</th>
                                         <th class="th">Action</th>
                                     </tr>
                                 </thead>
@@ -27,6 +28,7 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $data->name}}</td>
                                         <td>{{ $data->email }}</td>
+                                        <td>{{ $data->password }}</td>
                                         <td>
                                             <a class="btn btn-primary"><i class="bi bi-pencil-square"></i></a>
                                             <a class="btn btn-danger"><i class="bi bi-trash3-fill"></i></a>
