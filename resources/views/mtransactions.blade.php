@@ -32,12 +32,12 @@
                                 <tbody>
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $data->user->id }}</td> <!--Menampilkan Foreign key User-ID-->
+                                        <td>{{ $data->user->id}}</td> <!--Menampilkan Foreign key User-ID-->
                                         <td>{{ $data->name }}</td>
                                         <td>{{ $data->address }}</td>
                                         <td>{{ $data->phone }}</td>
                                         <td>{{ $data->date}}</td>
-                                        <td>{{ $data->courts->id}}</td> <!--Menampilkan Foreign key Court-ID-->
+                                        <td>{{ $data->courts->name}}</td> <!--Menampilkan Foreign key Court-ID-->
                                         <td>{{ $data->starttime }}</td>
                                         <td>{{ $data->endtime }}</td>
                                         <td>Rp. {{ $data->paytotal }}</td>
